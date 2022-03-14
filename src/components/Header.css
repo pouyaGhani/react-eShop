@@ -1,0 +1,45 @@
+.Header{
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    margin-left: 2px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+
+}
+
+.search-input{
+    padding-top: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+input[type=text]{
+    padding: 7px 6px;
+    width: 100%;
+    height: 11px;
+    outline: none;
+}
+.signin-container,.your-shop{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.basket{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+p {
+    margin: 2px 1px;
+}
+
+
