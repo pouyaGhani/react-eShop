@@ -3,7 +3,7 @@ import "./product.css";
 
 function product({url,title,price,rating}) {
   return (
-    <div>
+    <div className="product">
       <img src={url}></img>
       <p className="title">{title}</p>
       <strong>$ {price}</strong>

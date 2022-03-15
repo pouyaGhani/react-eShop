@@ -3,18 +3,20 @@ import "./Header.css";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import SearchIcon from "@mui/icons-material/Search";
-import { color, padding } from "@mui/system";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <div className="Header">
-      <div className="logo">
-        <ShoppingCartIcon
-          fontSize="large"
-          style={{ color: "#6e6e6e", padding: "5px" }}
-        ></ShoppingCartIcon>
-        <p>shop</p>
-      </div>
+      <Link to={'/'} style={{textDecoration:'none'}}>
+        <div className="logo">
+          <ShoppingCartIcon
+            fontSize="large"
+            style={{ color: "#6e6e6e", padding: "5px" }}
+          ></ShoppingCartIcon>
+          <h4>shop</h4>
+        </div>
+      </Link>
       <div className="search-input">
         <input type="text" placeholder="search..."></input>
         <SearchIcon
@@ -36,11 +38,14 @@ export default function Header() {
         <small>your</small>
         <strong>shop</strong>
       </div>
-
-      <div className="basket">
-        <ShoppingBasketIcon style={{ color: "#6e6e6e" }} />
-        <p>0</p>
-      </div>
+      
+      <Link to={'/checkout'} style={{textDecoration:'none'}}>
+        <div className="basket">
+          <ShoppingBasketIcon style={{ color: "#6e6e6e" }} />
+          <p>0</p>
+        </div>
+      </Link>
+      
     </div>
   );
 }

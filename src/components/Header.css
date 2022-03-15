@@ -39,8 +39,14 @@ input[type=text]{
     margin-top: 15px;
     margin-right: 20px;
 }
-p {
-    margin: 2px 1px;
+h4 {
+    display: inline;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+p{
+    margin: 3px 3px;
 }
 
 
