@@ -4,8 +4,11 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
+import { ShopContext } from "./ShopContext";
+import { useContext } from "react";
 
 export default function Header() {
+  const {buy,addProduct} = useContext(ShopContext);
   return (
     <div className="Header">
       <Link to={'/'} style={{textDecoration:'none'}}>
@@ -42,7 +45,7 @@ export default function Header() {
       <Link to={'/checkout'} style={{textDecoration:'none'}}>
         <div className="basket">
           <ShoppingBasketIcon style={{ color: "#6e6e6e" }} />
-          <p>0</p>
+          <p>{buy.length}</p>
         </div>
       </Link>
       

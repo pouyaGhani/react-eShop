@@ -24,3 +24,11 @@ h1{
 .product{
     margin: 10px 10px;
 }
+
+.add-button{
+    background-color: rgb(115, 175, 100);
+    border: none;
+    border-radius: 3px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
