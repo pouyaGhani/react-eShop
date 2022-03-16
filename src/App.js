@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Checkout from "./components/checkout";
+import Checkout from "./components/Checkout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ShopContext } from "./components/ShopContext";
 import { useState } from "react";

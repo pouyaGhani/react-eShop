@@ -1,10 +1,26 @@
-import React from 'react'
-import CheckoutProduct from './checkoutProduct'
+import React from "react";
+import CheckoutProduct from "./CheckoutProduct";
+import { ShopContext } from "./ShopContext";
+import { useContext } from "react";
+import Product from "./Product";
 
-function checkout() {
+function Checkout() {
+  const { buy, addProduct } = useContext(ShopContext);
+
   return (
-    <CheckoutProduct />
-  )
+    <>
+      {buy.map((product,id) => {
+        return(
+        <CheckoutProduct
+          key={id}
+          title={product.title}
+          price={product.price}
+          rating={product.rating}
+          url={product.url}
+        />);
+      })}
+    </>
+  );
 }
 
-export default checkout
+export default Checkout;
