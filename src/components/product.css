@@ -26,9 +26,14 @@ h1{
 }
 
 .add-button{
-    background-color: rgb(115, 175, 100);
+    background-color: rgb(117, 188, 255);
     border: none;
     border-radius: 3px;
     padding: 6px 10px;
     cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-button:active{
+    background-color: rgb(88, 154, 216);
 }

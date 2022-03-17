@@ -25,9 +25,10 @@ export default function Header() {
         <SearchIcon
           fontSize="medium"
           style={{
-            backgroundColor: "#d4d4d4",
+            backgroundColor: "#a877b8",
             borderRadius: "2px",
             padding: "3px",
+            color:"#f1e6f5"
           }}
         />
       </div>

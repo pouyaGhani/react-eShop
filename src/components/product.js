@@ -3,7 +3,7 @@ import "./Product.css";
 import { useContext } from "react";
 import { ShopContext } from "./ShopContext";
 
-function Product({ url, title, price, rating }) {
+function Product({ url, title, price, rating ,toggleHandler}) {
   const {buy,addProduct} =useContext(ShopContext);
   let ratingStars = [];
   for(let i=0;i<rating;i++){
@@ -11,6 +11,7 @@ function Product({ url, title, price, rating }) {
   }
   const addHandler = () => {
     addProduct(title,price,rating,url);
+    toggleHandler();
   };
   return (
     <div className="product">

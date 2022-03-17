@@ -2,3 +2,31 @@ img{
     mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0.5));
 }
 
+.alert-message{
+    position: fixed;
+    left: 2px;
+    bottom: 2px;
+    background-color: rgba(7, 138, 7,0.7);
+    color: rgb(0, 32, 0);
+    padding: 6px 4px;
+    border-radius: 5px;
+    animation-name: alert;
+    animation-duration: 3s;
+}
+
+.hidden{
+    display: none;
+}
+
+@keyframes alert {
+    0%   {background-color: rgba(7, 138, 7,0.4)}
+    15%  {background-color: rgba(7, 138, 7,0.5)}
+    25%  {background-color: rgba(7, 138, 7,0.6)}
+    35%  {background-color: rgba(7, 138, 7,0.7)}
+    50%  {background-color: rgba(7, 138, 7,0.8)}
+    65%  {background-color: rgba(7, 138, 7,0.7)}
+    75%  {background-color: rgba(7, 138, 7,0.6)}
+    85%  {background-color: rgba(7, 138, 7,0.5)}
+    100%  {background-color: rgba(7, 138, 7,0.4)}
+
+  }
