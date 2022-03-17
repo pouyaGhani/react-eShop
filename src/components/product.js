@@ -14,6 +14,7 @@ function Product({ url, title, price, rating ,toggleHandler}) {
     toggleHandler();
   };
   return (
+    
     <div className="product">
       <img src={url}></img>
       <p className="title">{title}</p>

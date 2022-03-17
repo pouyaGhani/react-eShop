@@ -34,3 +34,10 @@
 .pay-button:hover{
     background-color:rgb(153, 112, 201);
 }
+
+.no-item{
+    text-align: center;
+    color: rgb(214, 59, 59);
+    font-size: large;
+    margin-top: 220px;
+}

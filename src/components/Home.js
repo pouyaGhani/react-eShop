@@ -10,7 +10,7 @@ function Home() {
       setClassState('alert-message');
       setTimeout(() => {
         setClassState('hidden');
-      },3000);
+      },1000);
     },10);
   };
   return (

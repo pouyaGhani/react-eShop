@@ -13,25 +13,29 @@ function Checkout() {
   });
 
   return (
-    <div className="checkout-items">
-      <div className="checkout-products">
-        {buy.map((product, id) => {
-          return (
-            <CheckoutProduct
-              key={id}
-              title={product.title}
-              price={product.price}
-              rating={product.rating}
-              url={product.url}
-            />
-          );
-        })}
+    <>
+      <div className="checkout-items">
+        <div className="checkout-products">
+          {buy.map((product, id) => {
+            return (
+              <CheckoutProduct
+                key={id}
+                id={id}
+                title={product.title}
+                price={product.price}
+                rating={product.rating}
+                url={product.url}
+              />
+            );
+          })}
+        </div>
+        <div className="total-container">
+          <h5>Total : {Total}</h5>
+          <button className="pay-button">Pay</button>
+        </div>
       </div>
-      <div className="total-container">
-        <h5>Total : {Total}</h5>
-        <button className="pay-button">Pay</button>
-      </div>
-    </div>
+      {buy.length < 1 && <h5 className="no-item">Basket is Empty!</h5>}
+    </>
   );
 }
 

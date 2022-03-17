@@ -12,9 +12,14 @@ function App() {
   const addProduct = (title,price,rating,url)=>{
     setBuy(old => [...old,{title:title,price:price,rating:rating,url:url}]);
   }
+  const removeProduct = (id) =>{
+    let newProducts=buy.filter((product,index) => index != id)
+    setBuy(newProducts);
+    console.log(newProducts);
+  }
   return (
     <Router>
-      <ShopContext.Provider value={{buy,addProduct}}>
+      <ShopContext.Provider value={{buy,addProduct,removeProduct}}>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
