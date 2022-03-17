@@ -5,6 +5,7 @@ import Checkout from "./components/Checkout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ShopContext } from "./components/ShopContext";
 import { useState } from "react";
+import Login from "./components/Login";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </ShopContext.Provider>

@@ -32,11 +32,13 @@ export default function Header() {
           }}
         />
       </div>
-
+      
+      <Link to={'/login'} style={{textDecoration:'none'}}>
       <div className="signin-container">
         <small>Hello guest</small>
         <strong>sign in</strong>
       </div>
+      </Link>
 
       <div className="your-shop">
         <small>your</small>
